@@ -1,208 +1,32 @@
 {
-  "name": "contave-pro",
+  "name": "contave-pro-web",
   "version": "2.0.0",
-  "description": "Sistema de Gestión Contable Enterprise para Venezuela",
-  "main": "electron/main.cjs",
   "private": true,
-  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "test": "vitest",
-    "postinstall": "electron-builder install-app-deps",
-    "rebuild": "electron-rebuild",
-    "dist": "npm run build && npm run rebuild && electron-builder",
-    "dist:win": "npm run build && npm run rebuild && electron-builder --win --x64 --publish=never",
-    "dist:win-portable": "npm run build && npm run rebuild && electron-builder --win --x64 --config.win.target=portable --publish=never",
-    "dist:debug": "npm run build && electron-builder --win --x64 --publish=never --config.compression=store",
-    "docker:build": "docker build -t contave-pro-builder .",
-    "docker:run": "docker run --rm -v %cd%/release:/app/release contave-pro-builder",
-    "build:installer": "build-installer.bat",
-    "build:inno": "npm run build && iscc installer.iss",
-    "build:simple": "npm run build && npm run build:inno"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@electron/rebuild": "^3.6.0",
     "@supabase/supabase-js": "^2.57.2",
-    "@types/bcryptjs": "^2.4.6",
-    "@types/node": "^24.3.0",
-    "@types/nodemailer": "^7.0.1",
-    "@types/sqlite3": "^3.1.11",
-    "bcryptjs": "^3.0.2",
-    "better-sqlite3": "^11.6.0",
-    "canvg": "^4.0.3",
-    "crypto": "^1.0.1",
     "crypto-js": "^4.2.0",
     "date-fns": "^4.1.0",
     "dompurify": "^3.2.6",
-    "electron-log": "^5.1.0",
-    "electron-reload": "^2.0.0-alpha.1",
     "html2canvas": "^1.4.1",
     "jspdf": "^3.0.2",
     "lucide-react": "^0.344.0",
-    "nodemailer": "^7.0.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "readline": "^1.3.0",
     "recharts": "^2.12.7"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.8.0",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^14.6.1",
-    "@types/crypto-js": "^4.2.2",
-    "@types/jest": "^30.0.0",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.18",
-    "concurrently": "^9.2.1",
-    "electron": "^37.4.0",
-    "electron-builder": "^26.0.12",
-    "electron-is-dev": "^3.0.1",
-    "electron-rebuild": "^3.2.9",
-    "electron-updater": "^6.6.2",
-    "eslint": "^9.9.1",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.11",
-    "globals": "^15.9.0",
-    "jsdom": "^26.1.0",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^8.3.0",
-    "vite": "^5.4.2",
-    "vitest": "^3.2.4",
-    "wait-on": "^8.0.4"
-  },
-  "build": {
-    "appId": "com.contavepro.app",
-    "productName": "ContaVe Pro",
-    "executableName": "ContaVe Pro",
-    "electronLanguages": [
-      "es"
-    ],
-    "artifactName": "${productName}-${version}-${arch}.${ext}",
-    "directories": {
-      "output": "release",
-      "buildResources": "build"
-    },
-    "asarUnpack": [
-      "**/node_modules/better-sqlite3/**/*",
-      "**/node_modules/sqlite3/**/*"
-    ],
-    "extraResources": [
-      {
-        "from": "database/",
-        "to": "database/",
-        "filter": [
-          "**/*"
-        ]
-      }
-    ],
-    "files": [
-      "dist/**/*",
-      "electron/**/*.cjs",
-      "electron/**/*.js",
-      "!electron/assets/.gitkeep",
-      "package.json",
-      "!**/node_modules/fsevents/**",
-      "!**/node_modules/.cache/**",
-      "!**/fsevents/**",
-      "!**/fsevents",
-      "!**/*.{map,md}",
-      "!**/chokidar/**",
-      "!**/.DS_Store",
-      "!**/Thumbs.db",
-      "!**/__tests__/**",
-      "!**/test/**",
-      "!**/tests/**",
-      "!**/*.test.*",
-      "!**/*.spec.*"
-    ],
-    "win": {
-      "target": [
-        {
-          "target": "nsis",
-          "arch": [
-            "x64"
-          ]
-        },
-        {
-          "target": "portable",
-          "arch": [
-            "x64"
-          ]
-        },
-        {
-          "target": "dir",
-          "arch": [
-            "x64"
-          ]
-        }
-      ],
-      "icon": "electron/assets/icon.ico",
-      "signAndEditExecutable": false,
-      "verifyUpdateCodeSignature": false,
-      "fileAssociations": [
-        {
-          "ext": "cvpro",
-          "name": "ContaVe Pro Database",
-          "description": "ContaVe Pro Database File"
-        }
-      ]
-    },
-    "nsis": {
-      "oneClick": false,
-      "perMachine": true,
-      "allowElevation": true,
-      "allowToChangeInstallationDirectory": true,
-      "installerIcon": "electron/assets/icon.ico",
-      "uninstallerIcon": "electron/assets/icon.ico",
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true,
-      "shortcutName": "ContaVe Pro",
-      "uninstallDisplayName": "ContaVe Pro - Sistema Contable",
-      "displayLanguageSelector": false,
-      "installerLanguages": [
-        "es"
-      ],
-      "deleteAppDataOnUninstall": false,
-      "license": "LICENSE.md"
-    },
-    "portable": {
-      "artifactName": "${productName}-${version}-portable.${ext}"
-    },
-    "publish": {
-      "provider": "generic",
-      "url": "https://releases.contavepro.com/",
-      "publishAutoUpdate": false
-    }
-  },
-  "optionalDependencies": {
-    "fsevents": "*",
-    "@rollup/rollup-win32-x64-msvc": "^4.49.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/contavepro/contave-pro.git"
-  },
-  "keywords": [
-    "accounting",
-    "venezuela",
-    "seniat",
-    "islr",
-    "iva",
-    "tax",
-    "fiscal",
-    "enterprise",
-    "electron"
-  ],
-  "author": {
-    "name": "ContaVe Solutions",
-    "email": "desarrollo@contavepro.com"
-  },
-  "license": "Commercial"
+    "vite": "^5.4.2"
+  }
 }
