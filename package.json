@@ -182,7 +182,8 @@
     }
   },
   "optionalDependencies": {
-    "fsevents": "*"
+    "fsevents": "*",
+    "@rollup/rollup-win32-x64-msvc": "^4.49.0"
   },
   "repository": {
     "type": "git",
