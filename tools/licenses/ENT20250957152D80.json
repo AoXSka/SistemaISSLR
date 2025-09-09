@@ -1,0 +1,62 @@
+{
+  "id": "CV-mf5llfu0-js38y",
+  "client": {
+    "name": "Carlos Alberto Molina Moreno",
+    "company": " LABORATORIO CLINICO NOVOSALUD, C.A",
+    "rif": "J-50118192-6",
+    "email": "celestialcurrentsolution@gmail.com"
+  },
+  "company": {
+    "name": " LABORATORIO CLINICO NOVOSALUD, C.A",
+    "email": "celestialcurrentsolution@gmail.com",
+    "rif": "J-50118192-6"
+  },
+  "license": {
+    "id": "CV-mf5llfu0-js38y",
+    "type": "enterprise",
+    "status": "active",
+    "issuedDate": "2025-09-04T16:05:48.263Z",
+    "expiryDate": "2035-09-04T16:05:48.263Z",
+    "duration": 120,
+    "activationKey": "ENT-LN2F0WGW"
+  },
+  "limits": {
+    "maxRecords": -1,
+    "maxUsers": -1,
+    "maxCompanies": -1
+  },
+  "features": [
+    "advanced_reports",
+    "api_access",
+    "backup_restore",
+    "basic_accounting",
+    "basic_reports",
+    "email_vouchers",
+    "generate_vouchers",
+    "islr_retentions",
+    "iva_retentions",
+    "manage_providers",
+    "multi_company",
+    "priority_support",
+    "seniat_exports"
+  ],
+  "usage": {
+    "users": 0,
+    "records": 0,
+    "companies": 0
+  },
+  "security": {
+    "version": "2.0.0",
+    "signature": "bY6EPSPtxfYBNy46y+VKQ9FhWbu7mCTlegP6t6kTFhzE3I1p4eqO2G4NJHMOc4IQa96C+Ap8usanUvwq9k5X7V8QoYPszcjSuBjSjMTy07qeDoiw/9/gsU6D1KFeiJ6R2/T3vSQyoopl1xBe+IZGZ71G6TUaBoDnTkOSHvS7z6cYFld+6Oi+7r4721T63W8gf0LPNQTaYbQ64xq6riwC3TkdQGCn9uz7dATcYNiWm7U0CNkJ+ekq8vQ7bVSnGe2qxlT+cau2h6M0wlzKfB/jroMZPC5KZXqSjt0kBEYCUJCaqciz/J4lZqJLp0IQTev3j6FMu7Qvdv/oi7y5TUuVKQ==",
+    "checksum": "9997d930e3b3b0b344fafa0d7ca88b2e25d9ec540e7a599466a893eee0a442d4"
+  },
+  "metadata": {
+    "issuedBy": "ContaVe Solutions",
+    "generatedAt": "2025-09-04T16:05:48.265Z",
+    "activationCode": "ENT-LN2F0WGW",
+    "licenseKey": "ENT20250957152D80"
+  },
+  "_warning": "This file contains a digitally signed license. Do not modify.",
+  "_instructions": "Import this file into ContaVe Pro via License Management.",
+  "_support": "For assistance, contact soporte@contavepro.com"
+}

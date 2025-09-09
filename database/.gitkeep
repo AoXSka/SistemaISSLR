@@ -1,0 +1,3 @@
+# Database resources directory
+# Contains initial database files and migrations for distribution
+# This directory is included in the Electron app bundle via extraResources

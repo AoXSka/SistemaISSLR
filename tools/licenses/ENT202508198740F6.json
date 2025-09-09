@@ -1,0 +1,44 @@
+{
+  "id": "CV-mey9l99c-zf0nn",
+  "client": {
+    "name": "Carlos Alberto Molina Moreno",
+    "company": "LABORATORIO CLINICO NOVOSALUD, C.A",
+    "rif": "J-50118192-6",
+    "email": "contacto@empresa.com"
+  },
+  "license": {
+    "type": "enterprise",
+    "status": "active",
+    "issuedDate": "2025-08-30T12:55:21.119Z",
+    "expiryDate": "2035-08-30T12:55:21.119Z",
+    "duration": 120
+  },
+  "limits": {
+    "maxRecords": -1,
+    "maxUsers": -1,
+    "maxCompanies": -1
+  },
+  "features": [
+    "all_advanced",
+    "all_basic",
+    "api",
+    "integrations",
+    "multiuser",
+    "support",
+    "unlimited"
+  ],
+  "security": {
+    "version": "2.0.0",
+    "signature": "Cm/1S6/Uny28dOReScFKXlCleW6nbXDYdlRBlAnu89Rc943jwzuXbLkXEMoIQruRSa+mZlyr6xsME4J8QkMIA3NbdbeIIDIH5N0UrGjKNxjx8SuywGW/c/kaZrm76YXum48e/rKRZ86z0CF63ox/06O9BAo6dxB888p17wSquMyVt3O+3+U+7VIggPo3GwlVrhNTGojjorvuFAJBi4EHbdSlvv98S7W2uTRoR5JPn3baGDGvTxoPhaWza5IDwJyQC0HTgrSqaoOs7uxxVTE6eGfowBlGj3DJa5dBOb5wqmNAuzi268PAmjoiBro1iXIpAkl1TE7UeVpUnRPJjOBI9Q==",
+    "checksum": "704c99f3a2b6780eb6eebdd590ef70b09a481f495c2e9d3a9cf719185f1cb232"
+  },
+  "metadata": {
+    "issuedBy": "ContaVe Solutions",
+    "generatedAt": "2025-08-30T12:55:21.120Z",
+    "activationCode": "2T69IGFGBS2Q",
+    "licenseKey": "ENT202508198740F6"
+  },
+  "_warning": "This file contains a digitally signed license. Do not modify.",
+  "_instructions": "Import this file into ContaVe Pro via License Management.",
+  "_support": "For assistance, contact soporte@contavepro.com"
+}

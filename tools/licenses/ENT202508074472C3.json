@@ -1,0 +1,44 @@
+{
+  "id": "CV-mezx6v1g-xtkjb",
+  "client": {
+    "name": "David Castillo",
+    "company": "celestia current solution",
+    "rif": "J-27111984-0",
+    "email": "celestialcurrentsolution@gmail.com"
+  },
+  "license": {
+    "type": "enterprise",
+    "status": "active",
+    "issuedDate": "2025-08-31T16:43:46.467Z",
+    "expiryDate": "2035-08-31T16:43:46.467Z",
+    "duration": 120
+  },
+  "limits": {
+    "maxRecords": -1,
+    "maxUsers": -1,
+    "maxCompanies": -1
+  },
+  "features": [
+    "all_advanced",
+    "all_basic",
+    "api",
+    "integrations",
+    "multiuser",
+    "support",
+    "unlimited"
+  ],
+  "security": {
+    "version": "2.0.0",
+    "signature": "BiWfREP4jv+Q4j5Fsu9RQzYWUJQnEqwurw6v7+xiL4QZ3qZ/eTSQXUMO3i1BJ0IIE1S4SLzNwrWoDgGikLW4L2Q8mbfcwMCtDKB8Z+cRQRKBCglhYGpsw04k537IAXtfmoOAIOIVGTUIapvtG3+hG3CSW6vEvtZpxl0luRMeli+VKZy/i1THXnNxMwq8G33q+kexGvDjWYVLIJz/oocnmt9hVD2jVwYbZDqQAgnyhAaSPmY/izvaK13A8syg7jUpyUHgPXL/Eqg1D3vXC2vUBCfiGsJgHwro4Vf/RaT2lkzaQw6/nLcEO2ohM/bi6/5RXaCxPV/PvVQVZRCgpH+1uA==",
+    "checksum": "ac6a9c7bac15f3089a8ae9e97115b7fdb9537a6a2c8283cf44f40dec15b6c47a"
+  },
+  "metadata": {
+    "issuedBy": "ContaVe Solutions",
+    "generatedAt": "2025-08-31T16:43:46.468Z",
+    "activationCode": "XUV56MSM5PVK",
+    "licenseKey": "ENT202508074472C3"
+  },
+  "_warning": "This file contains a digitally signed license. Do not modify.",
+  "_instructions": "Import this file into ContaVe Pro via License Management.",
+  "_support": "For assistance, contact soporte@contavepro.com"
+}

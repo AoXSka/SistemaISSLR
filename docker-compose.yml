@@ -1,0 +1,39 @@
+# ContaVe Pro - Docker Compose para Development y Build
+version: '3.8'
+
+services:
+  # Build service para generar instalador Windows
+  builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+    volumes:
+      - ./release:/app/release
+      - ./logs:/app/logs
+      - build-cache:/app/node_modules/.cache
+    environment:
+      - NODE_ENV=production
+      - npm_config_target_platform=win32
+      - npm_config_target_arch=x64
+    command: npm run dist:win
+  
+  # Development service con hot reload
+  development:
+    build:
+      context: .
+      dockerfile: Dockerfile  
+      target: development
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - build-cache:/app/node_modules/.cache
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+
+volumes:
+  build-cache:
+    driver: local
